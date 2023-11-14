@@ -42,7 +42,7 @@
         combo_tvp {
             timeout-ms = <100>;
             key-positions = <11 12 13>;
-            bindings = <&tog 8>;
+            bindings = <&tog 7>;
         };
     };
 
@@ -85,10 +85,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-          &kp Q  &kp W  &kp E    &kp R    &kp T         &kp Y    &kp U  &kp I      &kp O    &kp P
-          &kp A  &kp S  &kp D    &kp F    &kp G         &kp H    &kp J  &kp K      &kp L    &kp SEMI
-&kp LGUI  &kp Z  &kp X  &kp C    &kp V    &kp B         &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp UNDERSCORE
-                        &kp ESC  &kp TAB  &kp LSHIFT    &kp RET  &to 1  &kp BSPC
+          &kp Q  &kp W  &kp E    &kp R      &kp T         &kp Y    &kp U  &kp I      &kp O    &kp P
+          &kp A  &kp S  &kp D    &kp F      &kp G         &kp H    &kp J  &kp K      &kp L    &kp SEMI
+&kp LGUI  &kp Z  &kp X  &kp C    &kp V      &kp B         &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp TAB
+                        &kp ESC  &kp SPACE  &kp LSHIFT    &kp RET  &to 1  &kp BSPC
             >;
         };
 
@@ -98,15 +98,6 @@
         &kp EQUAL        &kp SEMI       &kp LEFT_PARENTHESIS  &kp BSLH      &kp LBRC       &kp RIGHT_BRACE    &kp DOT        &kp RIGHT_PARENTHESIS  &kp POUND     &kp LS(PIPE)
 &trans  &kp UNDERSCORE   &kp LS(COLON)  &kp LESS_THAN         &kp DOLLAR    &kp LBKT       &kp RIGHT_BRACKET  &kp COMMA      &kp GREATER_THAN       &kp LS(PLUS)  &kp MINUS     &trans
                                         &trans                &to 0         &trans         &trans             &to 2          &trans
-            >;
-        };
-
-        num {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans
-        &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-                        &trans  &to 0   &trans    &trans  &to 3   &kp N0
             >;
         };
 
@@ -127,10 +118,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_MULTIPLY  &trans
-                               &trans    &to 0      &trans      &trans    &to 4      &kp KP_N0
+        &kp ESC    &bt BT_CLR  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp N7  &kp N8  &kp N9  &kp KP_PLUS
+        &kp LSHFT  &kp LEFT    &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp N4  &kp N5  &kp N6  &kp KP_MINUS
+&trans  &kp DEL    &kp PG_UP   &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp N1  &kp N2  &kp N3  &kp KP_MULTIPLY  &trans
+                               &trans    &to 0      &trans      &trans    &to 3   &kp N0
             >;
         };
 
@@ -139,7 +130,7 @@
         &trans  &trans  &trans      &trans  &trans             &trans             &trans  &trans         &trans  &trans
         &trans  &trans  &trans      &trans  &trans             &trans             &trans  &trans         &trans  &trans
 &trans  &trans  &trans  &trans      &trans  &trans             &trans             &trans  &trans         &trans  &trans  &trans
-                        &kp ESCAPE  &to 0   &kp RIGHT_SHIFT    &kp RIGHT_CONTROL  &to 5   &kp RIGHT_GUI
+                        &kp ESCAPE  &to 0   &kp RIGHT_SHIFT    &kp RIGHT_CONTROL  &to 4   &kp RIGHT_ALT
             >;
         };
 
@@ -163,7 +154,7 @@
         &sys_reset    &trans        &out OUT_TOG  &trans        &bt BT_CLR      &trans  &kp F7  &kp F8  &kp F9  &kp F12
         &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0    &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &trans        &trans        &trans        &bt BT_PRV    &bt BT_NXT      &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
-                                    &trans        &to 0         &trans          &trans  &to 5   &trans
+                                    &trans        &to 0         &trans          &trans  &to 4   &trans
             >;
         };
 
@@ -187,7 +178,7 @@
         &kp EXCL     &kp AT       &kp HASH   &kp DLLR  &kp PRCNT    &kp CARET     &kp AMPS        &kp RA(U)   &kp SQT     &kp DQT
         &kp RA(A)    &trans       &kp RA(S)  &trans    &trans       &kp C_MUTE    &kp LS(RA(N4))  &kp RA(N5)  &kp RA(N4)  &kp RA(O)
 &trans  &kp RA(F18)  &kp RA(F19)  &trans     &trans    &trans       &kp C_VOL_DN  &kp C_VOL_UP    &kp C_PREV  &kp C_NEXT  &kp BSLH   &trans
-                                  &trans     &gif      &mo 5        &trans        &kp C_PP        &trans
+                                  &trans     &gif      &mo 4        &trans        &kp C_PP        &trans
             >;
         };
 
@@ -209,7 +200,7 @@
 
             bindings = <
        &kp TAB    &kp I      &kp LC(LALT)  &kp O        &kp LC(F20)    &none  &none  &none  &none  &none
-       &lt 8 L    &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &none  &none  &none  &none
+       &lt 7 L    &kp LEFT   &kp LALT      &kp RIGHT    &kp SPACE      &none  &none  &none  &none  &none
 &kp J  &kp LSHFT  &kp LC(C)  &kp BSPC      &kp LC(V)    &kp LC(F19)    &none  &none  &none  &none  &none  &none
                              &trans        &kp LC(F14)  &kp LC(F13)    &none  &none  &none
             >;
@@ -236,6 +227,15 @@
         &trans       &kp LS(LEFT)  &kp LC(F17)   &kp LS(RIGHT)  &kp RET        &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &kp J        &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                    &trans        &kp LC(F12)    &kp LC(F11)    &trans  &trans  &trans
+            >;
+        };
+
+        num {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+                        &trans  &to 0   &trans    &trans  &to 2   &kp N0
             >;
         };
     };
