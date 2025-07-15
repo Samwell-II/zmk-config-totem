@@ -85,28 +85,28 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp Q  &kp W           &kp E                  &kp R       &kp T        &kp Y                  &kp U       &kp I        &kp O            &kp P
-       &kp A  &mt LEFT_ALT S  &mt LCTRL D            &mt LGUI F  &kp G        &kp H                  &mt RGUI J  &mt RCTRL K  &mt RIGHT_ALT L  &kp BACKSLASH
-&none  &kp Z  &kp X           &kp C                  &kp V       &kp B        &kp N                  &kp M       &kp COMMA    &kp DOT          &kp FSLH       &kp DOLLAR
-                              &mt LEFT_SHIFT ESCAPE  &lt 1 TAB   &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 2 TAB   &kp BSPC
+       &kp Q  &kp W           &kp E                  &kp R          &kp T        &kp Y                  &kp U       &kp I        &kp O            &kp P
+       &kp A  &mt LEFT_ALT S  &mt LCTRL D            &mt LGUI F     &kp G        &kp H                  &mt RGUI J  &mt RCTRL K  &mt RIGHT_ALT L  &kp BACKSLASH
+&none  &kp Z  &kp X           &kp C                  &kp V          &kp B        &kp N                  &kp M       &kp COMMA    &kp DOT          &kp FSLH       &kp DOLLAR
+                              &mt LEFT_SHIFT ESCAPE  &lt 1 LS(TAB)  &kp SPACE    &mt RIGHT_SHIFT ENTER  &lt 2 TAB   &kp BSPC
             >;
         };
 
-        Right-Symb {
+        Left-Symb {
             bindings = <
-        &kp EXCLAMATION  &kp AT_SIGN    &kp POUND      &kp GRAVE   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp ASTERISK      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
-        &kp EQUAL        &kp SEMI       &kp PERCENT    &kp DOLLAR  &kp LBRC                &kp RIGHT_BRACE        &kp DOT        &kp CARET         &kp POUND         &kp LS(PIPE)
-&trans  &kp UNDERSCORE   &kp LS(COLON)  &kp LESS_THAN  &kp TILDE   &kp LBKT                &kp RIGHT_BRACKET      &kp COMMA      &kp GREATER_THAN  &kp LS(PLUS)      &kp MINUS          &trans
-                                        &trans         &trans      &trans                  &trans                 &trans         &trans
+       &kp EXCLAMATION  &kp AT_SIGN    &kp POUND      &kp GRAVE   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp AMPERSAND  &kp ASTERISK      &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES
+       &kp EQUAL        &kp SEMI       &kp PERCENT    &kp DOLLAR  &kp LBRC                &kp RIGHT_BRACE        &kp DOT        &kp CARET         &kp POUND         &kp LS(PIPE)
+&to 7  &kp UNDERSCORE   &kp LS(COLON)  &kp LESS_THAN  &kp TILDE   &kp LBKT                &kp RIGHT_BRACKET      &kp COMMA      &kp GREATER_THAN  &kp LS(PLUS)      &kp MINUS          &trans
+                                       &trans         &trans      &trans                  &trans                 &trans         &trans
             >;
 
-            label = "Right";
+            label = "Left";
         };
 
         Left-Nav {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "Left";
+            label = "Right";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -229,6 +229,15 @@
         &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
                         &trans  &to 0   &trans    &trans  &to 2   &kp N0
+            >;
+        };
+
+        Gaming {
+            bindings = <
+       &none      &none     &kp W  &kp E    &kp T        &trans  &trans  &trans  &trans  &trans
+       &kp LSHFT  &kp A     &kp S  &kp D    &none        &trans  &trans  &trans  &trans  &trans
+&none  &kp LCTRL  &kp LALT  &none  &none    &none        &trans  &trans  &trans  &trans  &trans  &trans
+                            &to 0  &kp TAB  &kp SPACE    &trans  &trans  &trans
             >;
         };
     };
